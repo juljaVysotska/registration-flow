@@ -1,0 +1,35 @@
+.ssoSection {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+}
+
+.ssoButton {
+    flex-grow: 1;
+}
+.submitButton {
+    width: 100%;
+}
+
+.loginLayout {
+    display: grid;
+    grid-gap: 30px;
+    padding-top: clamp(40px, 180px, 180px);
+}
+.inputLayout {
+    display: grid;
+    grid-gap: 25px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.separator {
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    border: unset;
+    background-color: var(--border-primary);
+}
