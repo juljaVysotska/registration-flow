@@ -1,3 +1,4 @@
+import { Icon } from '../../assets/Icons';
 import { Button, ButtonPalette, ButtonSize } from '../../elements/Button';
 import styles from './styles.module.scss';
 
@@ -24,12 +25,12 @@ export const UI = () => {
                 </th>
             </tr>
             <tr>
-                <td >
+                <td rowSpan={2}>
                     <code>
                         size=&quot;{ButtonSize.S}&quot;
                     </code>
                 </td>
-                <td>
+                <td rowSpan={2}>
                     <code>
                         palette=&quot;{ButtonPalette.PRIMARY}&quot;
                     </code>
@@ -64,12 +65,49 @@ export const UI = () => {
             </tr>
 
             <tr>
+
+                <td>
+
+                    <Button
+                        palette={ButtonPalette.PRIMARY}
+                        size={ButtonSize.S}
+                    >
+                        <Icon.GoogleLogo />
+                        Text
+                        <Icon.GoogleLogo />
+                    </Button>
+                </td>
+                <td>
+                    <Button
+                        palette={ButtonPalette.PRIMARY}
+                        size={ButtonSize.S}
+                        isLoading
+                    >
+                        <Icon.GoogleLogo />
+                        Text
+                        <Icon.GoogleLogo />
+                    </Button>
+                </td>
+                <td>
+                    <Button
+                        palette={ButtonPalette.PRIMARY}
+                        size={ButtonSize.S}
+                        isDisabled
+                    >
+                        <Icon.GoogleLogo />
+                        Text
+                        <Icon.GoogleLogo />
+                    </Button>
+                </td>
+            </tr>
+
+            <tr>
                 <td rowSpan={2}>
                     <code>
                         size=&quot;{ButtonSize.S}&quot;
                     </code>
                 </td>
-                <td>
+                <td rowSpan={2}>
                     <code>
                         palette=&quot;{ButtonPalette.SECONDARY}&quot;
                     </code>
@@ -99,6 +137,42 @@ export const UI = () => {
                         isDisabled
                     >
                         isDisabled
+                    </Button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <Button
+                        palette={ButtonPalette.SECONDARY}
+                        size={ButtonSize.S}
+                    >
+                        <Icon.GithubLogo />
+                        Text
+                        <Icon.GithubLogo />
+                    </Button>
+                </td>
+                <td>
+                    <Button
+                        palette={ButtonPalette.SECONDARY}
+                        size={ButtonSize.S}
+                        isLoading
+                    >
+                        <Icon.GithubLogo />
+                        isLoading
+                        <Icon.GithubLogo />
+                    </Button>
+                </td>
+                <td>
+                    <Button
+                        palette={ButtonPalette.SECONDARY}
+                        size={ButtonSize.S}
+                        isDisabled
+                    >
+                        <Icon.GithubLogo />
+                        isDisabled
+                        <Icon.GithubLogo />
                     </Button>
                 </td>
             </tr>

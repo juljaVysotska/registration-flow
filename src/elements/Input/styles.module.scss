@@ -37,3 +37,10 @@
     cursor: pointer;
     z-index: 1;
 }
+
+.errorMessage {
+    color: rgb(var(--error-500));
+    position: absolute;
+    inset-block-start: 105%;
+    inset-inline-end: 0;
+}

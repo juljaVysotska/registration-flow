@@ -1,3 +1,7 @@
+.logo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 .ssoSection {
     display: flex;
     width: 100%;
@@ -26,10 +30,24 @@
     margin-bottom: 10px;
 }
 
+.separatorBlock {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.separatorText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-primary);
+    padding: 5px;
+    color: rgb(var(--gray-300));
+}
+
 .separator {
     width: 100%;
     margin: 0;
     height: 1px;
     border: unset;
-    background-color: var(--border-primary);
+    background-color: rgb(var(--gray-300));
 }
