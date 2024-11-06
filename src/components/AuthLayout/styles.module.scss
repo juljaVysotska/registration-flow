@@ -1,0 +1,14 @@
+.logo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.loginLayout {
+    display: grid;
+    grid-gap: 30px;
+    padding-top: clamp(40px, 180px, 180px);
+}
+
+.title {
+    margin-bottom: 10px;
+}

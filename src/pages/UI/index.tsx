@@ -1,5 +1,5 @@
 import { Icon } from '../../assets/Icons';
-import { Button, ButtonPalette, ButtonSize } from '../../elements/Button';
+import { Button, ButtonPalette, ButtonSize } from '../../components/Button';
 import styles from './styles.module.scss';
 
 export const UI = () => {

@@ -1,7 +1,3 @@
-.logo {
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
 .ssoSection {
     display: flex;
     width: 100%;
@@ -12,15 +8,11 @@
 .ssoButton {
     flex-grow: 1;
 }
+
 .submitButton {
     width: 100%;
 }
 
-.loginLayout {
-    display: grid;
-    grid-gap: 30px;
-    padding-top: clamp(40px, 180px, 180px);
-}
 .inputLayout {
     display: grid;
     grid-gap: 25px;
@@ -50,4 +42,10 @@
     height: 1px;
     border: unset;
     background-color: rgb(var(--gray-300));
+}
+
+.passwordInput {
+    display: grid;
+    grid-gap: 5px;
+    text-align: right;
 }

@@ -1,17 +1,13 @@
-import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Icon } from '../../assets/Icons';
-import { Button, ButtonPalette, ButtonSize } from '../../elements/Button';
-import { Input, PasswordInput } from '../../elements/Input';
-import { GlobalLayout } from '../../elements/Layout';
+import { AuthLayout } from '../../components/AuthLayout';
+import { Button, ButtonPalette, ButtonSize } from '../../components/Button';
+import { Input, PasswordInput } from '../../components/Input';
 import { Routes } from '../../types/routes';
 import styles from './styles.module.scss';
 
 export const Login = () => {
-    return <GlobalLayout className={styles.loginLayout}>
-        <Link to={'/'} className={styles.logo}><Icon.Logo /></Link>
-        <h2 className={classNames('text-primary', 'text-30', 'text-700', 'text-center', styles.title)}>Log in to your account</h2>
-
+    return <AuthLayout title='Log in to your account'>
         <div className={styles.ssoSection}>
             <Button className={styles.ssoButton}>
                 <Icon.GoogleLogo />
@@ -31,13 +27,14 @@ export const Login = () => {
                 type='email'
                 placeholder='Work email'
             />
-            <PasswordInput
-                placeholder='Password'
-            />
+            <div className={styles.passwordInput}>
+                <PasswordInput
+                    placeholder='Password'
+                />
+                <Link to={Routes.FORGOT} className='text-tertiary'>Forgot your password?</Link>
+            </div>
         </div>
 
         <Button palette={ButtonPalette.PRIMARY} size={ButtonSize.M} type='submit' className={styles.submitButton}>Log in to Qencode</Button>
-
-        <p className={classNames('text-14', 'text-400', 'text-primary', 'text-center')}>Is your company new to Qencode? <Link to={Routes.FORGOT} className='text-tertiary'>Sign up</Link></p>
-    </GlobalLayout >;
+    </AuthLayout >;
 };
