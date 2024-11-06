@@ -1,0 +1,63 @@
+:root {
+    --transition-time: 300ms;
+
+    --black: 0 0 0; // #000000
+    --white: 255 255 255; // #fff
+
+    --primary-200: 49 111 234; // #316FEA
+
+    --gray-150: 228 230 233; //#e4e6e9
+    --gray-200: 211 216 220; //#d3d8dc
+    --gray-300: 190 197 204; //#bec5cc
+    --gray-400: 161 171 181; //#a1abb5
+    --gray-900: 7 14 30; //#070e1e
+
+    --error-25: 255 251 250; // #fffbfa
+    --error-50: 254 243 242; // #fef3f2
+    --error-100: 254 228 226; // #fee4e2
+    --error-200: 254 205 202; // #fecdca
+    --error-300: 253 162 155; // #fda29b
+    --error-400: 249 112 102; // #f97066
+    --error-500: 240 68 56; // #f04438
+    --error-600: 217 45 32; // #d92d20
+    --error-700: 180 35 24; // #b42318
+    --error-800: 145 32 24; // #912018
+    --error-900: 122 39 26; // #7a271a
+    --error-950: 85 22 12; // #55160c
+
+    // text
+    --text-primary: rgb(var(--gray-900));
+    --text-secondary: rgb(var(--white));
+    --text-tertiary: rgb(var(--primary-200));
+    --text-placeholder: var(--gray-400);
+
+    --border-primary: rgb(var(--gray-400));
+
+    --bg-primary: rgb(var(--white));
+
+    // components - buttons
+    --btn-primary-color: rgb(var(--white));
+    --btn-primary-color-hover: rgb(var(--white));
+    --btn-primary-bg: rgb(var(--primary-200));
+    --btn-primary-bg-hover: rgb(var(--primary-200) / 0.8);
+    --btn-primary-border: rgb(var(--primary-200));
+    --btn-primary-border-hover: rgb(var(--primary-200) / 0.8);
+    --btn-primary-color-disabled: rgb(var(--white) / 0.2);
+    --btn-primary-bg-disabled: rgb(var(--primary-200) / 0.2);
+    --btn-primary-border-disabled: rgb(var(--primary-200) / 0.2);
+
+    --btn-secondary-color: rgb(var(--gray-900));
+    --btn-secondary-color-hover: rgb(var(--gray-900));
+    --btn-secondary-bg: rgb(var(--white));
+    --btn-secondary-bg-hover: rgb(var(--gray-150) / 0.2);
+    --btn-secondary-border: rgb(var(--gray-200));
+    --btn-secondary-border-hover: rgb(var(--gray-200));
+    --btn-secondary-color-disabled: rgb(var(--gray-900) / 0.2);
+    --btn-secondary-bg-disabled: rgb(var(--white) / 0.2);
+    --btn-secondary-border-disabled: rgb(var(--gray-200) / 0.2);
+
+    // input
+    --input-color: rgb(var(--gray-900));
+    --input-placeholder: var(--gray-400);
+    --input-border: var(--gray-400);
+}

@@ -1,0 +1,58 @@
+// font-weight
+.text-400 {
+    font-weight: 400;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+
+.text-700 {
+    font-weight: 700;
+}
+
+// text-color
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+.text-tertiary {
+    color: var(--text-tertiary);
+}
+
+// font-size
+.text-12 {
+    font-size: 12px;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-15 {
+    font-size: 15px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-30 {
+    font-size: 30px;
+}
+
+// alignment
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

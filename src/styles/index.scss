@@ -1,0 +1,13 @@
+@use 'palette';
+@use 'base';
+@use 'typography';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: unset;
+}

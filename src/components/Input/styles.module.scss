@@ -1,0 +1,46 @@
+.input {
+    padding: 14px 12px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 48px;
+    font-size: 15px;
+    border: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition:
+        border var(--transition-time),
+        outline var(--transition-time),
+        color var(--transition-time);
+
+    &:active,
+    &:focus {
+        outline: 4px solid var(--focus-ring-brand); // ! fix color
+    }
+
+    ::placeholder {
+        color: var(--text-placeholder);
+    }
+}
+
+.inputWrapper {
+    position: relative;
+    display: grid;
+    grid-gap: 8px;
+}
+
+.toggler {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    bottom: 14px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.errorMessage {
+    color: rgb(var(--error-500));
+    position: absolute;
+    inset-block-start: 105%;
+    inset-inline-end: 0;
+}
